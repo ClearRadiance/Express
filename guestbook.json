@@ -1,0 +1,20 @@
+[
+  {
+    "id": "a66671e4-9e5c-412f-afd3-dfb5e7f700d6",
+    "name": "Akira",
+    "msg": "hi",
+    "createdAt": "2026-10-05T12:51:00.360Z"
+  },
+  {
+    "id": "e9863879-73e5-4155-a129-d77c2a59993b",
+    "name": "Akira",
+    "msg": "<img onerror>",
+    "createdAt": "2026-10-05T12:55:16.324Z"
+  },
+  {
+    "id": "b191796b-20d6-4985-b8d3-a818c53d4771",
+    "name": "Akira",
+    "msg": "<img src=\"x\" onerror=\"alert(1)\">",
+    "createdAt": "2026-10-05T12:55:36.269Z"
+  }
+]

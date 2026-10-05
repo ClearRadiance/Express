@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="nav-brand">
+            Station Akira Allen
+        </div>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/landing">Landing</a>
+            <a href="/guestbook">Guestbook</a>
+            <a href="/dashboard" class="active">Dashboard</a>
+        </div>
+
+    </nav>
+
+    <main class="container">
+
+        <section class="dashboard-header">
+
+            <p class="eyebrow">PRIVATE AREA</p>
+
+            <h1>Dashboard</h1>
+
+            <p>
+                Welcome to your Station Akira Allen dashboard.
+            </p>
+
+        </section>
+
+        <section class="dashboard-grid">
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-icon">⌂</div>
+
+                <h2>Home</h2>
+
+                <p>
+                    Return to the main server page.
+                </p>
+
+                <a href="/">Go Home →</a>
+
+            </div>
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-icon">✎</div>
+
+                <h2>Guestbook</h2>
+
+                <p>
+                    View and leave guestbook messages.
+                </p>
+
+                <a href="/guestbook">Open Guestbook →</a>
+
+            </div>
+
+            <div class="dashboard-card">
+
+                <div class="dashboard-icon">✓</div>
+
+                <h2>Status</h2>
+
+                <p class="online-text">
+                    Server is online.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="card logout-card">
+
+            <h2>Log Out</h2>
+
+            <p>
+                End your current session.
+            </p>
+
+            <button class="button secondary-button" id="logout-button">
+                Log Out
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Station Akira Allen · Node.js & Express</p>
+    </footer>
+
+    <script>
+        document.querySelector('#logout-button').addEventListener('click', async () => {
+
+            await fetch('/logout', {
+                method: 'POST'
+            });
+
+            window.location.href = '/';
+
+        });
+    </script>
+
+</body>
+
+</html>

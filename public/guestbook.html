@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guestbook</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+
+    <main id="guestbook-main">
+
+        <nav>
+
+            <a href="/" id="home-link">Home</a>
+
+            <a href="/landing" id="landing-link">Landing</a>
+
+            <a href="/guestbook" id="guestbook-link">Guestbook</a>
+
+            <a href="/dashboard" id="dashboard-link">Dashboard</a>
+
+        </nav>
+
+        <h1 id="guestbook-title">Guestbook</h1>
+
+        <form id="guestbook-form">
+
+            <label for="name">Name</label>
+
+            <input id="name" type="text" name="name" placeholder="Your name..." maxlength="40" autocomplete="off"
+                required>
+
+            <label for="msg">Message</label>
+
+            <input id="msg" type="text" name="msg" placeholder="Leave a message..." maxlength="280" autocomplete="off"
+                required>
+
+            <button type="submit">
+
+                Post
+
+            </button>
+
+            <p id="form-error" role="alert"></p>
+
+        </form>
+
+        <p id="list-error" role="alert"></p>
+
+        <ul id="guestbook-list"></ul>
+
+    </main>
+
+    <script src="/guestbook.js"></script>
+
+</body>
+
+</html>
